@@ -309,7 +309,8 @@ module velocity
 
             write(dummy,*) iteration
 
-            fileName = "/home/jake/PSOFortran/xyz/xyz" // trim(adjustl(dummy)) // ".dat"
+            ! please update the name as needed
+            fileName = "</path/to/the/code>" // trim(adjustl(dummy)) // ".dat"
 
             open(unit=21,file=trim(fileName), status='unknown')
 
@@ -341,7 +342,8 @@ module velocity
 
             write(dummy,*) iteration
 
-            fileName = "/home/jake/PSOFortran/xyz/swarm" // trim(adjustl(dummy)) // ".dat"
+            ! please update the name as needed
+            fileName = "</path/to/the/code>" // trim(adjustl(dummy)) // ".dat"
 
             open(unit=21,file=trim(fileName), status='unknown')
 
