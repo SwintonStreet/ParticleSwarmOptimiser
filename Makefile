@@ -45,7 +45,7 @@ clean:
 	rm -f $(OBJ_ALL) *.mod
 
 #====================== Generic f95 compilers - DEBUG ================
-make:
+target:
 	$(MAKE) LD="gfortran -o" \
 	LDFLAGS="-O3" \
 	FC="gfortran -c" \

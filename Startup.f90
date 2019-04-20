@@ -85,14 +85,15 @@ module Startup
             n=0
 
             do
-                read (1, *,end=97,err=98), dummy    ; n=n+1
+                read (1, *,end=97,err=98) dummy    ; n=n+1
             end do
 
             97 continue
 
             rewind(1); allocate(Darray(n)); allocate(Tarray(n))
 
-            read (1, 50,err=98), Darray; read (2, 51,err=98), Tarray
+            read (1, 50,err=98) Darray
+            read (2, 51,err=98) Tarray
 
             50 format(f3.1); 51 format(f5.2)
 
